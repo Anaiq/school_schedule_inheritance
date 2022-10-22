@@ -87,7 +87,7 @@ def test_high_school_student_summary_with_parking_and_clubs():
         clubs=["DJ Club"])
     summary = ellis.summary()
 
-    assert summary == "Ellis is a junior enrolled in 0 classes: \nEllis has parking privileges\nEllis is a member of: DJ Club"
+    assert summary == "Ellis is a junior enrolled in 0 classes: .\nEllis has parking privileges\nEllis is a member of: DJ Club"
 
 def test_high_school_student_summary_without_parking_or_clubs():
     # Arrange
@@ -99,4 +99,4 @@ def test_high_school_student_summary_without_parking_or_clubs():
     ellis = HighSchoolStudent(name, grade, classes)
     summary = ellis.summary()
 
-    assert summary == "Ellis is a junior enrolled in 0 classes: \nEllis doesn't have parking privileges\nEllis hasn't joined a club yet."
+    assert summary == "Ellis is a junior enrolled in 0 classes: .\nEllis doesn't have parking privileges\nEllis hasn't joined a club yet."
